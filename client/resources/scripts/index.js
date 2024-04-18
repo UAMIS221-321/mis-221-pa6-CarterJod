@@ -92,7 +92,8 @@ function showButtons(){
     document.getElementById("editButton").style.display = "inline-block";
     document.getElementById("deleteButton").style.display = "inline-block";
     document.getElementById("rentButton").style.display = "inline-block";
-    document.getElementById("returnButton").style.display = "none";
+    document.getElementById("returnButton").style.display = "inline-block";
+    document.getElementById ("saveButton").style.display = "none";
 }
 
 function makeEditable(){
