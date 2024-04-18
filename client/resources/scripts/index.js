@@ -15,7 +15,8 @@ function handleOnChange(){
 function handleEditClick(){
     makeEditable();
     hideButtons();
-    var buttonHtml = "<button class=\"btn btn-primary btn-lg\" onclick=\"handleEditSave("+myBook.id+")\">Save</button>"
+    //var buttonHtml = "<button class=\"btn btn-primary btn-lg\" onclick=\"handleEditSave("+myBook.id+")\">Save</button>"
+    var buttonHtml = "<button class=\"btn btn-primary btn-lg\" onclick=\"handleEditSave(myBook.id)\">Save</button>"
     buttonHtml += "<button class=\"btn btn-warning btn-lg btn-cancle\" onclick=\"handleCancelSave()\">Cancel</button>"
     document.getElementById("saveButton").innerHTML = buttonHtml;
     document.getElementById("saveButton").style.display = "inline-block";
@@ -70,7 +71,7 @@ function populateForm(){
     document.getElementById("bookTitle").value = myBook.title;
     document.getElementById("bookAuthor").value = myBook.author;
     document.getElementById("bookGenre").value = myBook.genre;
-    document.getElementById("bookAvlb").value = myBook.avlb;
+    document.getElementById("bookAvlb").value = myBook.numAvlb;
     document.getElementById("bookIsbn").value = myBook.isbn;
     document.getElementById("bookLength").value = myBook.length;
     document.getElementById("bookCover").value = myBook.cover;
